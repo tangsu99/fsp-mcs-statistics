@@ -2,6 +2,7 @@
 import { RouterView } from 'vue-router'
 import NavBar from '@/components/NavBar.vue'
 import LeftCard from '@/components/LeftCard.vue'
+import MessageQueue from './components/MessageQueue.vue'
 </script>
 
 <template>
@@ -15,14 +16,16 @@ import LeftCard from '@/components/LeftCard.vue'
           </v-col>
 
           <v-col cols="12" md="10">
-            <v-sheet min-height="70vh" rounded="lg" :elevation="8" class="pa-4">
+            <RouterView />
+            <!-- <v-sheet min-height="70vh" rounded="lg" :elevation="8" class="pa-4">
               <RouterView />
-            </v-sheet>
+            </v-sheet> -->
           </v-col>
         </v-row>
       </v-container>
     </v-main>
   </v-app>
+  <message-queue></message-queue>
 </template>
 
 <style scoped></style>

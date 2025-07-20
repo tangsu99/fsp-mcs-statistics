@@ -1,8 +1,6 @@
 <template>
   <!-- <DatePicker></DatePicker> -->
-  <div class="status-line-box">
-    <v-chart class="status-line" :option="option" autoresize />
-  </div>
+  <v-chart class="base-chart-box" :option="option" autoresize />
 </template>
 
 <script setup lang="ts">
@@ -93,14 +91,4 @@ const fetchData = () => {
 fetchData()
 </script>
 
-<style>
-.status-line-box {
-  width: 100%;
-  height: 100%;
-}
-
-.status-line {
-  width: 100%;
-  height: 320px;
-}
-</style>
+<style></style>
